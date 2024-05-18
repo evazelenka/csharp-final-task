@@ -2,10 +2,10 @@
 
 void NatNum(int m, int n)
 {
-    if(m <= n)
+    if (m <= n)
     {
         Console.WriteLine(m);
-        m+= 1;
+        m += 1;
         NatNum(m, n);
     }
 }

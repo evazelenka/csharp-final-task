@@ -18,9 +18,9 @@ void PrintArray(int[] array)
     Console.WriteLine();
 }
 
-void ReverseArray(int [] array, int i)
+void ReverseArray(int[] array, int i)
 {
-    if(i < array.Length)
+    if (i < array.Length)
     {
         Console.Write(array[array.Length - i - 1] + " ");
         ReverseArray(array, i + 1);

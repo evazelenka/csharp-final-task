@@ -6,16 +6,16 @@ int Akker(int m, int n)
     {
         return n + 1;
     }
-    else if (m> 0 && n == 0)
+    else if (m > 0 && n == 0)
     {
         return Akker(m - 1, 1);
-        
+
     }
-    else if(m > 0 && n > 0)
+    else if (m > 0 && n > 0)
     {
-       return Akker(m-1, Akker(m,n-1));
+        return Akker(m - 1, Akker(m, n - 1));
     }
-    return n+1;
+    return n + 1;
 }
 int res = Akker(3, 2);
 Console.WriteLine(res);
